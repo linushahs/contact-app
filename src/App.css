@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --primary-color: rgb(77, 179, 77);
+  --secondary-color: rgb(235, 77, 77);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: whitesmoke;
+  padding: 0 2rem;
+}
+.btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 40%;
+}
+
+.card-container {
+  padding: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 2rem auto;
+}
+
+.card-container > .upper-side {
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  background-position: center;
+}
+
+.card-container > .lower-side {
+  text-align: center;
+  margin-top: 1rem;
+}
+.card-container > .lower-side > span {
+  opacity: 0.7;
+}
+
+p {
+  text-transform: capitalize;
+}
+
+.btn.add-btn {
+  width: 50px;
+  height: 35px;
+}
+
+.input-elem {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border: 1.5px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1.5px solid whitesmoke;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+.left-side {
+  display: flex;
+}
+
+.delete-btn {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.add-icon:hover,
+.delete-btn:hover,
+.cancel-icon:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.add-icon {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+
+.cancel-icon {
+  font-size: 2.2rem;
+  color: var(--secondary-color);
+}
+
+.email {
+  opacity: 0.7;
+}
+
+.header-title {
+  color: black;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/** Contact Card styles **/
+.user-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.back-to-contact {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 70%;
+  }
+}
